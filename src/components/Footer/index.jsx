@@ -1,10 +1,12 @@
 import "./style.scss";
-const index = () => {
+const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer>
+      <div className="container">
+        <h2>Made by Abdulaziz</h2>
+      </div>
+    </footer>
   );
 };
 
-export default index;
+export default Footer;
