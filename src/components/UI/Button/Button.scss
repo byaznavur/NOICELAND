@@ -1,0 +1,22 @@
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.7s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  &:active {
+    background: rgb(231, 224, 224);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  button {
+    padding: 7px 12px;
+  }
+}

@@ -1,0 +1,149 @@
+header {
+  background: rgb(231, 224, 224);
+  padding: 30px;
+}
+.btnlogin {
+  background-color: #000;
+  color: #fff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    font-size: 25px;
+    font-weight: bold;
+    a {
+      color: black;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &-toggle {
+      display: none;
+    }
+    &-list {
+      display: flex;
+      gap: 40px;
+      &__item {
+        position: relative;
+        color: #000;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #000;
+          transition: width 0.3s ease-out;
+        }
+        &:hover::after {
+          width: 100%;
+          left: 0;
+        }
+        &-link {
+          color: rgb(0, 0, 0);
+          font-family: Libre Franklin;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hidden {
+    display: none;
+  }
+
+  .show {
+    position: absolute;
+    right: 0;
+    top: 89px;
+    width: 100%;
+    align-items: center;
+    background-color: #999292;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  header {
+    background: rgb(231, 224, 224);
+    padding: 30px;
+  }
+  .btnlogin {
+    background-color: #000;
+    color: #fff;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      font-size: 20px;
+      font-weight: bold;
+      a {
+        color: black;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &-toggle {
+        display: block;
+
+        svg {
+          font-size: 25px;
+          color: #000;
+          display: flex;
+        }
+      }
+      &-list {
+        &__item {
+          position: relative;
+          color: #000;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s ease-out;
+          }
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+          &-link {
+            color: rgb(0, 0, 0);
+            font-family: Libre Franklin;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
