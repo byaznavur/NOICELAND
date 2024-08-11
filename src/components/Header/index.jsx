@@ -18,7 +18,7 @@ const index = () => {
         </div>
 
         <nav className="header__nav">
-          <ul className={`header__nav-list ${open ? "hidden" : "show"}`}>
+          <ul className={`header__nav-list ${open ? "show" : "hidden"}`}>
             <li className="header__nav-list__item">
               <a className="header__nav-list__item-link" href="#">
                 Home

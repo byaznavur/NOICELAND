@@ -1,9 +1,9 @@
 import "./Button.scss";
 
-const Button = ({ content, type, classList }) => {
+const Button = ({ content, type, classList, styleBtnHerro }) => {
   return (
     <div>
-      <button className={classList} type={type}>
+      <button className={classList} style={styleBtnHerro} type={type}>
         {content}
       </button>
     </div>
