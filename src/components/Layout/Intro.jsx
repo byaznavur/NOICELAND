@@ -6,6 +6,8 @@ import Card from "../UI/Card";
 import { data } from "../../constants/data";
 import { datas } from "../../constants/db";
 import LatestCard from "../UI/Card/LatestCard";
+import { posts } from "../../constants/post";
+import FeaturedPost from "../UI/Card/FeaturedPost";
 const Intro = () => {
   const styleBtnHerro = {
     marginTop: "27px",
@@ -82,6 +84,15 @@ const Intro = () => {
             border=" 1px solid rgb(0, 0, 0)"
             background="rgb(255, 255, 255)"
           />
+        </div>
+      </section>
+
+      <section className="featured">
+        <h2>featured POSTS</h2>
+        <div className="featuredpost">
+          {posts.map((post, i) => (
+            <FeaturedPost {...post} key={i} />
+          ))}
         </div>
       </section>
     </div>
