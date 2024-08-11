@@ -1,0 +1,45 @@
+.latestcard {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background-color: rgb(204, 206, 207);
+  padding: 15px 10px;
+  max-width: 305.66px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+  span {
+    color: rgb(153, 153, 153);
+    font-family: Libre Franklin;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 24px 0;
+  }
+  h3 {
+    color: rgb(0, 0, 0);
+    font-family: Tenor Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  p {
+    color: rgb(0, 0, 0);
+    font-family: Libre Franklin;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+}

@@ -1,6 +1,11 @@
 import "./style.scss";
 import herroImg from "../../assets/images/herroimg.png";
 import Button from "../UI/Button/Button";
+
+import Card from "../UI/Card";
+import { data } from "../../constants/data";
+import { datas } from "../../constants/db";
+import LatestCard from "../UI/Card/LatestCard";
 const Intro = () => {
   const styleBtnHerro = {
     marginTop: "27px",
@@ -13,6 +18,7 @@ const Intro = () => {
     textAlign: "left",
     textTransform: "uppercase",
   };
+
   return (
     <div className="container">
       <div className="herro">
@@ -39,6 +45,45 @@ const Intro = () => {
           </div>
         </div>
       </div>
+      <section className="post">
+        {data.map((item, i) => (
+          <Card {...item} key={i} />
+        ))}
+      </section>
+      <section className="latest">
+        <h2
+          style={{
+            color: "rgb(153, 153, 153)",
+            fontFamily: "Libre Franklin",
+            fontSize: "10px",
+            fontWeight: 400,
+            lineHeight: "12px",
+            letterSpacing: "1px",
+            textAlign: "left",
+            textTransform: "uppercase",
+            marginBottom: "80px",
+            marginTop: "30px",
+          }}
+        >
+          LATES POST
+        </h2>
+        <section className="latestpost">
+          {datas.map((data, i) => (
+            <LatestCard {...data} key={i} />
+          ))}
+        </section>
+
+        <div className="latestbutton">
+          <Button
+            content="view all latest posts"
+            styleBtnHerro={styleBtnHerro}
+            classList="herroBtnCenter"
+            boxSizing=" border-box"
+            border=" 1px solid rgb(0, 0, 0)"
+            background="rgb(255, 255, 255)"
+          />
+        </div>
+      </section>
     </div>
   );
 };
