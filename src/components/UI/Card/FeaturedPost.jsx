@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "./FeaturedPost.scss";
 
 const FeaturedPost = (props) => {
@@ -11,6 +12,13 @@ const FeaturedPost = (props) => {
       <p>By {name}</p>
     </div>
   );
+};
+
+FeaturedPost.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default FeaturedPost;
